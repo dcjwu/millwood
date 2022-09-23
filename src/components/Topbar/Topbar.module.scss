@@ -1,0 +1,38 @@
+@import "src/assets/styles/constants";
+@import "src/assets/styles/mixins";
+
+.wrapper {
+  display: none;
+}
+
+@include breakpoint-max($bp-screen-lg) {
+  .wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    left: 50%;
+    margin-top: 3.2rem;
+    max-width: $screen-max-width;
+    padding: 0 3.2rem;
+    position: fixed;
+    top: 0;
+    transform: translateX(-50%);
+    width: calc(100vw - 6.4rem);
+    z-index: 99;
+  }
+
+  .call {
+    position: absolute;
+    left: 3.2rem;
+    background-color: $color-brand;
+    padding: 1.2rem;
+    height: 2.4rem;
+    width: 2.4rem;
+    border-radius: 100%;
+    transition: background-color .2s ease-in-out;
+
+    svg path {
+      stroke: $color-white;
+    }
+  }
+}

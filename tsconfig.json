@@ -19,8 +19,8 @@
     "baseUrl": ".",
     "useUnknownInCatchVariables": false,
     "paths": {
-      "@db/*": ["db/*"],
       "@assets/*": ["src/assets/*"],
+      "@atoms/*": ["src/atoms/*"],
       "@components/*": ["src/components/*"],
       "@constants/*": ["src/constants/*"],
       "@hooks/*": ["src/hooks/*"],

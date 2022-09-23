@@ -12,6 +12,16 @@
   padding-left: $nav-real-width;
   width: calc(100vw - $nav-real-width);
 
+  @include breakpoint-max($bp-screen-xl) {
+    padding-left: $nav-real-width-xl;
+    width: calc(100vw - $nav-real-width-xl);
+  }
+
+  @include breakpoint-max($bp-screen-lg) {
+    padding-left: 0;
+    width: 100vw;
+  }
+
   > p {
     max-width: 75%;
   }

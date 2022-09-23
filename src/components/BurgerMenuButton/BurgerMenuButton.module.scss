@@ -1,0 +1,60 @@
+@import "src/assets/styles/constants";
+@import "src/assets/styles/mixins";
+
+.button {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: 1.6rem;
+  position: absolute;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in-out;
+  width: 4rem;
+  right: 3.2rem;
+
+  @include breakpoint-max($bp-screen-lg) {
+    display: block;
+  }
+
+  :hover,
+  :focus {
+    > span {
+      background-color: $color-grey-400;
+    }
+  }
+
+  > span {
+    background-color: $color-white;
+    border-radius: 1.2rem;
+    cursor: pointer;
+    display: block;
+    height: .2rem;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out, background-color .3s ease-in-out;
+    width: 100%;
+
+    &:nth-child(1) {
+      top: 0;
+    }
+
+    &:nth-child(2) {
+      top: 1.2rem;
+    }
+  }
+
+  &.active span {
+    &:nth-child(1) {
+      top: .6rem;
+      transform: rotate(-135deg);
+    }
+
+    &:nth-child(2) {
+      top: .6rem;
+      transform: rotate(135deg);
+    }
+  }
+}

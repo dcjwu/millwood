@@ -8,6 +8,7 @@ $color-background-grey: #272727;
 
 $color-brand: #C5A47E;
 
+$bp-screen-xl: 1099px;
 $bp-screen-lg: 991px;
 $bp-screen-md: 767px;
 $bp-screen-smd: 565px;
@@ -15,9 +16,12 @@ $bp-screen-sm: 375px;
 $bp-screen-xs: 320px;
 
 $nav-width: 16vw;
+$nav-width-xl: 22vw;
+
 $nav-padding-x: 3.2rem;
 
 $nav-real-width: calc($nav-width + $nav-padding-x * 2);
+$nav-real-width-xl: calc($nav-width-xl + $nav-padding-x * 2);
 
 $screen-max-width: 1200px;
 

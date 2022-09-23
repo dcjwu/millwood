@@ -9,17 +9,40 @@
   flex-direction: column;
   height: calc(100vh - 12.8rem);
   left: 0;
-  padding: 6.4rem $nav-padding-x;
+  padding: 6.4rem $nav-padding-x 6.4rem $nav-padding-x;
   position: fixed;
   top: 0;
   width: $nav-width;
   z-index: 100;
+  transition: transform .2s ease-in-out, border-radius .2s ease-in-out;
+  overflow-y: scroll;
+
+  @include breakpoint-max($bp-screen-xl) {
+    width: $nav-width-xl;
+  }
+
+  @include breakpoint-max($bp-screen-lg) {
+    transform: translateX(-100%);
+    width: calc(100vw - $nav-padding-x * 2);
+
+    &.show {
+      border-radius: 0;
+      transform: translateX(0);
+    }
+  }
 }
 
-.list {
+.nav {
   align-self: flex-start;
   margin-top: 4.8rem;
   width: 100%;
+  height: calc(95% - 4.8rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.list {
 
   > li {
     @include text-paragraph-large();
@@ -34,23 +57,38 @@
 }
 
 .contact {
+  justify-self: flex-end;
   align-items: center;
-  bottom: 6.4rem;
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
-  left: 50%;
-  position: absolute;
-  transform: translateX(-50%);
+  gap: 1.6rem;
+
+  a {
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+    gap: .8rem;
+    align-items: center;
+
+    &:focus,
+    &:hover {
+      svg {
+        path {
+          stroke: $color-brand;
+        }
+      }
+      span {
+        color: $color-brand;
+      }
+    }
+  }
+
+  svg {
+    path {
+      transition: stroke .2s ease-in-out;
+    }
+  }
 
   span {
     transition: color .2s ease-in-out;
-  }
-
-  > a:focus,
-  a:hover {
-    span {
-      color: $color-brand;
-    }
   }
 }

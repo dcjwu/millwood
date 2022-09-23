@@ -1,6 +1,7 @@
 import React from "react"
 
 import Head from "next/head"
+import { RecoilRoot } from "recoil"
 
 import type { AppProps } from "next/app"
 
@@ -15,11 +16,13 @@ const MyApp = ({
       <>
          <Head>
             <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
-               name="viewport"/>
+                  name="viewport"/>
             <title>Millwood | Quality in Wood</title>
          </Head>
-        
-         <Component {...pageProps} />
+
+         <RecoilRoot>
+            <Component {...pageProps} />
+         </RecoilRoot>
       </>
    )
 }
