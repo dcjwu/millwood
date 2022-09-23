@@ -2,16 +2,16 @@
 @import "src/assets/styles/mixins";
 
 .button {
-  display: none;
   background-color: transparent;
   border: none;
   cursor: pointer;
+  display: none;
   height: 1.6rem;
   position: absolute;
+  right: 3.2rem;
   transform: rotate(0deg);
   transition: transform 0.3s ease-in-out;
   width: 4rem;
-  right: 3.2rem;
 
   @include breakpoint-max($bp-screen-lg) {
     display: block;
