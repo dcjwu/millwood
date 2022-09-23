@@ -14,6 +14,11 @@ $bp-screen-smd: 565px;
 $bp-screen-sm: 375px;
 $bp-screen-xs: 320px;
 
+$nav-width: 16vw;
+$nav-padding-x: 3.2rem;
+
+$nav-real-width: calc($nav-width + $nav-padding-x * 2);
+
 $screen-max-width: 1200px;
 
 

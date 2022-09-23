@@ -3,7 +3,7 @@ import React from "react"
 import { Heading } from "@lib/Heading/Heading"
 import { Text } from "@lib/Text/Text"
 
-import type { SectionType } from "@customTypes/lib/section.type"
+import type { SectionType } from "@customTypes/lib"
 
 import s from "./Section.module.scss"
 
@@ -18,6 +18,8 @@ export const Section: React.FC<SectionType> = ({
    return (
       <section id={id} {...props}
                className={s.section}>
+         <Text color="brand" component="p" variant="paragraph-lg">
+         </Text>
          <div className={s.wrapper}>
             <div className={s.title}>
                <Heading color="white" component="h2"

@@ -1,6 +1,15 @@
 @import "src/assets/styles/constants";
 @import "src/assets/styles/mixins";
 
+.section {
+  background-color: $color-background-grey;
+  padding: 12.8rem 3.2rem 12.8rem calc($nav-real-width + 3.2rem);
+  @include breakpoint-max($bp-screen-md) {
+    padding-top: 8.8rem;
+    padding-bottom: 8.8rem;
+  }
+}
+
 .wrapper {
   max-width: $screen-max-width;
   margin: 0 auto;
@@ -17,13 +26,5 @@
 
   @include breakpoint-max($bp-screen-md) {
     margin-bottom: 4.8rem;
-  }
-}
-
-.section {
-  padding: 12.8rem 3.2rem;
-  @include breakpoint-max($bp-screen-md) {
-    padding-top: 8.8rem;
-    padding-bottom: 8.8rem;
   }
 }

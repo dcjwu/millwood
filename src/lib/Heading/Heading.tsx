@@ -2,7 +2,7 @@ import React from "react"
 
 import classNames from "classnames/bind"
 
-import type { HeadingType } from "@customTypes/lib/heading.type"
+import type { HeadingType } from "@customTypes/lib"
 
 import s from "./Heading.module.scss"
 

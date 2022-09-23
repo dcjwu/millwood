@@ -1,0 +1,74 @@
+@import "src/assets/styles/constants";
+@import "src/assets/styles/mixins";
+
+.button {
+  font-family: inherit;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  padding: 1.4rem 3.2rem;
+  border-radius: 1.6rem;
+  @include text-paragraph();
+  font-weight: 700;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out, padding-right .3s ease-in-out;
+
+  @include breakpoint-max($bp-screen-md) {
+    padding: 1.2rem 3.2rem;
+  }
+}
+
+.primary {
+  background-color: $color-background-grey;
+  color: $color-white;
+
+  &:hover,
+  &:focus {
+    background-color: $color-brand;
+  }
+}
+
+.loading, .success {
+  display: grid;
+  grid-template-columns: 1fr 0fr;
+  gap: .8rem;
+
+  &:hover,
+  &:focus {
+    padding-right: 3.2rem;
+    background-color: $color-grey-1000;
+  }
+
+  svg {
+    width: 2.4rem;
+    height: 2.4rem;
+    opacity: 1;
+    position: static;
+    transform: translateY(0);
+  }
+}
+
+
+.error {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  &:hover,
+  &:focus {
+    padding-right: 3.2rem;
+    background-color: $color-grey-1000;
+  }
+
+  svg {
+    display: none;
+  }
+
+  span {
+    max-width: 16ch;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
