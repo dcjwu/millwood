@@ -2,15 +2,15 @@
 @import "src/assets/styles/mixins";
 
 .wrapper {
-  padding-left: $nav-real-width;
-  width: calc(100vw - $nav-real-width);
-  height: 100vh;
+  align-items: center;
   background: linear-gradient(to bottom, rgba($color-grey-600, 0.85), rgba($color-brand, 0.85)), url('../../assets/images/header.jpeg') left center no-repeat;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 3.2rem;
+  height: 100vh;
+  justify-content: center;
+  padding-left: $nav-real-width;
+  width: calc(100vw - $nav-real-width);
 
   > p {
     max-width: 75%;
