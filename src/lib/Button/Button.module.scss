@@ -13,7 +13,7 @@
   border-radius: 1.6rem;
   @include text-paragraph();
   font-weight: 700;
-  transition: background-color .3s ease-in-out, color .3s ease-in-out, padding-right .3s ease-in-out;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
 
   @include breakpoint-max($bp-screen-md) {
     padding: 1.2rem 3.2rem;
