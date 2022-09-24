@@ -2,10 +2,10 @@
 @import "src/assets/styles/mixins";
 
 .wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(212px, 1fr));
   align-items: center;
+  display: grid;
   gap: 4.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(212px, 1fr));
   justify-content: center;
 }
 
@@ -15,10 +15,10 @@
 }
 
 .image {
+  aspect-ratio: 6 / 9;
   cursor: pointer;
   margin: 0 auto;
   position: relative;
-  aspect-ratio: 6 / 9;
 
   &:hover {
     img {
@@ -32,12 +32,12 @@
 }
 
 .button {
-  margin-top: 6.4rem;
   display: flex;
   justify-content: center;
+  margin-top: 6.4rem;
   button {
-    transition: color .2s ease-in-out;
     background-color: $color-brand;
+    transition: color .2s ease-in-out;
 
     &:hover,
     &:focus {
