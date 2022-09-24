@@ -58,13 +58,18 @@
   }
 
   > li {
-    @include text-paragraph-large();
+    cursor: pointer;
     border-bottom: 1px solid $color-grey-600;
     padding: .8rem 0;
     transition: border-bottom-color .2s ease-in-out;
 
     &:hover {
       border-bottom-color: $color-brand;
+    }
+
+    a {
+      color: $color-grey-300;
+      font-weight: 700;
     }
   }
 }

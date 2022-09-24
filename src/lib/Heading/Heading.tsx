@@ -2,9 +2,15 @@ import React from "react"
 
 import classNames from "classnames/bind"
 
-import type { HeadingType } from "@customTypes/lib"
-
 import s from "./Heading.module.scss"
+
+type HeadingType = {
+   component: "h1" | "h2" | "h3" | "h4" | "p"
+   variant: "display" | "h1" | "h2" | "h3"
+   color: "brand" | "white" | "300" | "400" | "600" | "1000"
+   children: React.ReactNode
+   [k: string]: unknown
+}
 
 const cx = classNames.bind(s)
 

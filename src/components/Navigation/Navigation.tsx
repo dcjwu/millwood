@@ -2,7 +2,7 @@ import React from "react"
 
 import classNames from "classnames/bind"
 import Image from "next/image"
-import { useRecoilValue } from "recoil"
+import { useRecoilState } from "recoil"
 
 import logo from "@assets/images/Logo.svg"
 import { isBurgerMenuShown } from "@atoms/isBurgerMenuShown.atom"
@@ -16,9 +16,14 @@ const cx = classNames.bind(s)
 
 export const Navigation: React.FC = (): JSX.Element => {
 
-   const isBurgerMenuOpen = useRecoilValue(isBurgerMenuShown)
+   const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useRecoilState(isBurgerMenuShown)
 
    const classNamesNav = cx(s.wrapper, { show: isBurgerMenuOpen })
+
+   const handleGoToBlock = (id: string): void => {
+      setIsBurgerMenuOpen(false)
+      window.location.href = `#${id}`
+   }
 
    return (
       <>
@@ -29,25 +34,22 @@ export const Navigation: React.FC = (): JSX.Element => {
                    src={logo} width={200}/>
             <div className={s.nav}>
                <ul className={s.list}>
-                  <li>
-                     <a href="#home">
-                        Home
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#products">
-                        Products
-                     </a>
-                  </li>
-                  <li><a href="#about">
+                  <Text isBold color="white" component="li"
+                        variant="paragraph-lg" onClick={(): void => handleGoToBlock("home")}>
+                     Home
+                  </Text>
+                  <Text isBold color="white" component="li"
+                        variant="paragraph-lg" onClick={(): void => handleGoToBlock("products")}>
+                     Products
+                  </Text>
+                  <Text isBold color="white" component="li"
+                        variant="paragraph-lg" onClick={(): void => handleGoToBlock("about")}>
                      About
-                  </a>
-                  </li>
-                  <li>
-                     <a href="#contact">
-                        Get in Touch
-                     </a>
-                  </li>
+                  </Text>
+                  <Text isBold color="white" component="li"
+                        variant="paragraph-lg" onClick={(): void => handleGoToBlock("contact")}>
+                     Contact Us
+                  </Text>
                </ul>
                <div className={s.contact}>
                   <a href="tel:+37122012202">
@@ -88,7 +90,7 @@ export const Navigation: React.FC = (): JSX.Element => {
                   </a>
                </div>
             </div>
-            
+
             <BurgerMenuButton style={{ top: "3.8rem", right: "3.2rem" }}/>
          </nav>
       </>

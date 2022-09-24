@@ -22,12 +22,8 @@
       "@assets/*": ["src/assets/*"],
       "@atoms/*": ["src/atoms/*"],
       "@components/*": ["src/components/*"],
-      "@constants/*": ["src/constants/*"],
       "@hooks/*": ["src/hooks/*"],
       "@lib/*": ["src/lib/*"],
-      "@service/*": ["src/service/*"],
-      "@customTypes/*": ["src/types/*"],
-      "@utils/*": ["src/utils/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

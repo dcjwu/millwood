@@ -5,11 +5,18 @@ import classNames from "classnames/bind"
 import { Heading } from "@lib/Heading/Heading"
 import { Text } from "@lib/Text/Text"
 
-import type { SectionType } from "@customTypes/lib"
-
 import s from "./Section.module.scss"
 
 const cx = classNames.bind(s)
+
+type SectionType = {
+   title: string
+   subtitle?: string
+   id?: string
+   isBrandBackGround?: boolean
+   children: React.ReactNode
+   [k: string]: unknown
+}
 
 export const Section: React.FC<SectionType> = ({
    title,

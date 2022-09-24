@@ -5,11 +5,13 @@ import { useRecoilState } from "recoil"
 
 import { isBurgerMenuShown } from "@atoms/isBurgerMenuShown.atom"
 
-import type { BurgerMenuButtonType } from "@customTypes/components"
-
 import s from "./BurgerMenuButton.module.scss"
 
 const cx = classNames.bind(s)
+
+type BurgerMenuButtonType = {
+   [k: string]: unknown
+}
 
 export const BurgerMenuButton: React.FC<BurgerMenuButtonType> = ({ ...props }): JSX.Element => {
 

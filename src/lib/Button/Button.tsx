@@ -2,11 +2,19 @@ import React from "react"
 
 import classNames from "classnames/bind"
 
-import type { ButtonType } from "@customTypes/lib"
-
 import s from "./Button.module.scss"
 
 const cx = classNames.bind(s)
+
+type ButtonType = {
+   variant: "primary" | "secondary"
+   ariaLabel: string
+   children: React.ReactNode
+   loading?: boolean
+   success?: string
+   error?: string
+   [k: string]: unknown
+}
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonType>(({
    variant,
