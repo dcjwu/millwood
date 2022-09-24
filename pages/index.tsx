@@ -1,3 +1,4 @@
+import { Footer } from "@components/Footer/Footer"
 import { Header } from "@components/Header/Header"
 import { Section } from "@lib/Section/Section"
 
@@ -9,33 +10,19 @@ const Home: NextPage = () => {
       <>
          <Header/>
 
-         <Section subtitle="What we do" title="Products">
-            lsakdjf;lsakdj l;fkjs;lkfjs;l
+         <Section subtitle="What we offer" title="Products">
+            CONTENT
          </Section>
 
-         <Section subtitle="What we do" title="Products">
-            lsakdjf;lsakdj l;fkjs;lkfjs;l
+         <Section isBrandBackGround subtitle="Who we are" title="About">
+            CONTENT
          </Section>
 
-         <Section subtitle="What we do" title="Products">
-            lsakdjf;lsakdj l;fkjs;lkfjs;l
+         <Section subtitle="Contact us" title="Get in Touch">
+            CONTENT
          </Section>
-
-         <Section subtitle="What we do" title="Products">
-            lsakdjf;lsakdj l;fkjs;lkfjs;l
-         </Section>
-
-         <Section subtitle="What we do" title="Products">
-            lsakdjf;lsakdj l;fkjs;lkfjs;l
-         </Section>
-
-         <Section subtitle="What we do" title="Products">
-            lsakdjf;lsakdj l;fkjs;lkfjs;l
-         </Section>
-
-         <Section subtitle="What we do" title="Products">
-            lsakdjf;lsakdj l;fkjs;lkfjs;l
-         </Section>
+         
+         <Footer/>
       </>
    )
 }

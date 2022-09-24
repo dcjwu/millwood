@@ -18,6 +18,14 @@
     padding-top: 8.8rem;
     padding-bottom: 8.8rem;
   }
+
+  &.brand {
+    background-color: $color-brand;
+
+    .title > p {
+      color: $color-background-grey;
+    }
+  }
 }
 
 .wrapper {

@@ -29,8 +29,8 @@
 
   > span {
     @include breakpoint-max($bp-screen-lg) {
-      margin: 0 auto !important;
       display: block !important;
+      margin: 0 auto !important;
     }
   }
 }
@@ -38,12 +38,12 @@
 .nav {
   align-self: flex-start;
   display: flex;
-  height: calc(100% - 12.8rem - 4.8rem - 7rem); //navHeight - padding - marginTop - blockHeight
   flex-direction: column;
+  gap: 6.4rem;
+  height: calc(100% - 12.8rem - 4.8rem - 7rem); //navHeight - padding - marginTop - blockHeight
   justify-content: space-between;
   margin-top: 4.8rem;
   width: 100%;
-  gap: 6.4rem;
 
   @include breakpoint-max($bp-screen-lg) {
     height: initial;

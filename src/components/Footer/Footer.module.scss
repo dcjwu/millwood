@@ -1,0 +1,7 @@
+@import "src/assets/styles/constants";
+@import "src/assets/styles/mixins";
+
+.footer {
+  background-color: $color-brand;
+  padding: 3.2rem 3.2rem 3.2rem calc($nav-real-width + 3.2rem);
+}
