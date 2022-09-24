@@ -33,7 +33,7 @@ export const Navigation: React.FC = (): JSX.Element => {
             <Image alt="Millwood.lv" height={200}
                    src={logo} width={200}/>
             <div className={s.nav}>
-               <ul className={s.list}>
+               <ul className={s.list} data-aos="fade-right">
                   <Text isBold color="white" component="li"
                         variant="paragraph-lg" onClick={(): void => handleGoToBlock("home")}>
                      Home
