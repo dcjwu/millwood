@@ -41,9 +41,9 @@
 
   > button {
     align-self: center;
-    width: fit-content;
     background-color: $color-brand;
     transition: color .2s ease-in-out;
+    width: fit-content;
 
     &:hover,
     &:focus {

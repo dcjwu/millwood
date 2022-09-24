@@ -4,6 +4,9 @@
 .footer {
   background-color: $color-brand;
   padding: 3.2rem 3.2rem 3.2rem calc($nav-real-width + 3.2rem);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(212px, 1fr));
+  gap: 2.4rem;
 
   @include breakpoint-max($bp-screen-xl) {
     padding-left: calc($nav-real-width-xl + 3.2rem);
