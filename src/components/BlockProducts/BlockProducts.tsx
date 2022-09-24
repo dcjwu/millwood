@@ -2,8 +2,8 @@ import React from "react"
 
 import Image from "next/image"
 
-import birchlogs from "@assets/images/birchlogs.jpg"
-import woodpellets from "@assets/images/woodpellets.jpg"
+import birchlogs from "@assets/images/birchlogs.webp"
+import woodpellets from "@assets/images/woodpellets.webp"
 import { ProductsModal } from "@components/BlockProducts/ProductsModal"
 import { Button } from "@lib/Button/Button"
 import { Text } from "@lib/Text/Text"
@@ -57,10 +57,10 @@ export const BlockProducts: React.FC = (): JSX.Element => {
 
    return (
       <>
-         <div className={s.wrapper}>
+         <div className={s.wrapper} data-aos="fade-down">
 
-            {products.map((item, index) => (
-               <div key={item.name} className={s.item} data-aos={index % 2 === 0 ? "fade-down" : "fade-up"}>
+            {products.map(item => (
+               <div key={item.name} className={s.item}>
                   <div className={s.image} role="presentation" onClick={(): void => handleOpenModal(item)}>
                      <Image alt={item.name} layout="fill"
                             quality={100} src={item.image}/>
