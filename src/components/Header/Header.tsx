@@ -23,7 +23,7 @@ export const Header: React.FC = (): JSX.Element => {
             </Text>
             <a href="#contact">
                <Button ariaLabel="contact-us" variant="primary">
-                  Get in touch
+                  Get in Touch
                </Button>
             </a>
          </header>

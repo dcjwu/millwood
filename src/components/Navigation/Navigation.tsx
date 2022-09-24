@@ -45,7 +45,7 @@ export const Navigation: React.FC = (): JSX.Element => {
                   </li>
                   <li>
                      <a href="#contact">
-                        Get in touch
+                        Get in Touch
                      </a>
                   </li>
                </ul>
@@ -89,7 +89,7 @@ export const Navigation: React.FC = (): JSX.Element => {
                </div>
             </div>
             
-            <BurgerMenuButton style={{ top: "2.4rem", right: "2.4rem" }}/>
+            <BurgerMenuButton style={{ top: "3.8rem", right: "3.2rem" }}/>
          </nav>
       </>
    )
