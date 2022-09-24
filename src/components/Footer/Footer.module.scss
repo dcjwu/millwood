@@ -4,4 +4,13 @@
 .footer {
   background-color: $color-brand;
   padding: 3.2rem 3.2rem 3.2rem calc($nav-real-width + 3.2rem);
+
+  @include breakpoint-max($bp-screen-xl) {
+    padding-left: calc($nav-real-width-xl + 3.2rem);
+  }
+
+  @include breakpoint-max($bp-screen-lg) {
+    padding-left: 3.2rem;
+    width: calc(100vw - 6.4rem);
+  }
 }
