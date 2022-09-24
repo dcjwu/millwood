@@ -9,7 +9,7 @@ export default class Document extends NextDocument {
                <link crossOrigin="true" href="https://fonts.gstatic.com" rel="preconnect"/>
                <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
                      rel="stylesheet"/>
-               <meta content="ADD TEXT HERE..."/>
+               <meta content="Quality in wood" name="description"/>
             </Head>
             <body>
                <Main/>
