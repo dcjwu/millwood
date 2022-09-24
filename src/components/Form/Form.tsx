@@ -71,7 +71,7 @@ export const Form: React.FC = (): JSX.Element => {
    }
    
    return (
-      <form className={s.form} onSubmit={handleFormSubmit}>
+      <form className={s.form} data-aos="fade-down" onSubmit={handleFormSubmit}>
          <input required name="name" placeholder="Name"
                 type="text" value={form.name}
                 onChange={handleInputChange}/>

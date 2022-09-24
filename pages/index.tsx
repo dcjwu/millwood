@@ -33,7 +33,8 @@ const Home: NextPage = () => {
 
          <Section isBrandBackGround id="about" subtitle="Who we are"
                   title="About">
-            <Text color="white" component="p" style={{ textAlign: "center" }}
+            <Text color="white" component="p" data-aos="fade-up"
+                  style={{ textAlign: "center" }}
                   variant="paragraph-lg">
                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed arcu pulvinar felis suscipit lobortis
                commodo sit amet leo. Morbi hendrerit a purus sed rhoncus. Phasellus enim ante, pulvinar quis magna non,
