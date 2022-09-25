@@ -30,3 +30,22 @@
     }
   }
 }
+
+.inner {
+  background-color: $color-background-grey;
+  opacity: .75;
+  padding: 6.4rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  justify-content: center;
+
+  button {
+    background-color: $color-brand;
+
+    &:hover,
+    &:focus {
+      color: $color-background-grey;
+    }
+  }
+}

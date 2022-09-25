@@ -7,7 +7,7 @@ import s from "./Heading.module.scss"
 type HeadingType = {
    component: "h1" | "h2" | "h3" | "h4" | "p"
    variant: "display" | "h1" | "h2" | "h3"
-   color: "brand" | "white" | "300" | "400" | "600" | "1000"
+   color: "brand" | "white" | "300" | "400" | "600" | "1000" | "bg"
    children: React.ReactNode
    [k: string]: unknown
 }
