@@ -56,10 +56,10 @@
   }
 
   > li {
-    text-transform: uppercase;
     border-bottom: 1px solid $color-grey-600;
     cursor: pointer;
     padding: .8rem 0;
+    text-transform: uppercase;
     transition: border-bottom-color .2s ease-in-out;
 
     &:hover {
