@@ -22,7 +22,7 @@
 
   &:hover {
     img {
-      filter: grayscale(.6) blur(1px);
+      filter: brightness(0.4) blur(1px);
     }
   }
 
