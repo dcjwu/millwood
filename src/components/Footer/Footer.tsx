@@ -9,7 +9,7 @@ export const Footer: React.FC = (): JSX.Element => {
       <div className={s.footer}>
          <div>
             <Text color="white" component="p" variant="paragraph">
-               &quot;Millhouse Trade&quot; SIA
+               SIA &quot;Millhouse Trade&quot;
             </Text>
             <Text color="white" component="p" variant="paragraph">
                Reg Nr: 440203387800
@@ -20,24 +20,24 @@ export const Footer: React.FC = (): JSX.Element => {
          </div>
          <div>
             <Text color="white" component="p" variant="paragraph">
-               &quot;Millhouse Trade&quot; SIA
+               XXXXXXXXXXXXXXXXXXX
             </Text>
             <Text color="white" component="p" variant="paragraph">
-               Reg Nr: 440203387800
+               XXXXXXXXXXXXXXXXXXX
             </Text>
             <Text color="white" component="p" variant="paragraph">
-               Riga, Latvia
+               XXXXXXXXXXXXXXXXXXX
             </Text>
          </div>
          <div>
             <Text color="white" component="p" variant="paragraph">
-               &quot;Millhouse Trade&quot; SIA
+               XXXXXXXXXXXXXXXXXXX
             </Text>
             <Text color="white" component="p" variant="paragraph">
-               Reg Nr: 440203387800
+               XXXXXXXXXXXXXXXXXXX
             </Text>
             <Text color="white" component="p" variant="paragraph">
-               Riga, Latvia
+               XXXXXXXXXXXXXXXXXXX
             </Text>
          </div>
       </div>

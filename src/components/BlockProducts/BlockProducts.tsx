@@ -3,6 +3,7 @@ import React from "react"
 import Image from "next/image"
 
 import birchlogs from "@assets/images/birchlogs.webp"
+import other from "@assets/images/other.webp"
 import woodpellets from "@assets/images/woodpellets.webp"
 import { ProductsModal } from "@components/BlockProducts/ProductsModal"
 import { Button } from "@lib/Button/Button"
@@ -21,20 +22,18 @@ export interface IProducts {
 const products: IProducts[] = [
    {
       name: "Wood Pellets",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut nisl sed nisl aliquam dapibus id in lectus. Vivamus ultricies tristique mi nec iaculis. Aliquam sollicitudin arcu ac eleifend semper. Proin tempor tellus a orci pellentesque convallis at quis lectus. In iaculis ut ipsum nec vehicula. Etiam et efficitur massa. Duis in lobortis augue, nec posuere lacus. Morbi in vulputate leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: "We produce and distribute class A1 and ST1, 6mm pellets made from spruce and pine wood.",
       image: woodpellets
    },
    {
-      name: "Birch Logs",
-      description: "2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut nisl sed nisl aliquam" +
-         " dapibus id in lectus. Vivamus ultricies tristique mi nec iaculis. Aliquam sollicitudin arcu ac eleifend semper. Proin tempor tellus a orci pellentesque convallis at quis lectus. In iaculis ut ipsum nec vehicula. Etiam et efficitur massa. Duis in lobortis augue, nec posuere lacus. Morbi in vulputate leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      name: "Birch Firewoods",
+      description: "We distribute kiln dried birch firewood in 20 L and 40 L bags. Size: 25-30 cm (as per request), Moisture: up to 18%.",
       image: birchlogs
    },
    {
-      name: "Wood Pellets 3",
-      description: "3Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut nisl sed nisl aliquam" +
-         " dapibus id in lectus. Vivamus ultricies tristique mi nec iaculis. Aliquam sollicitudin arcu ac eleifend semper. Proin tempor tellus a orci pellentesque convallis at quis lectus. In iaculis ut ipsum nec vehicula. Etiam et efficitur massa. Duis in lobortis augue, nec posuere lacus. Morbi in vulputate leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      image: woodpellets
+      name: "Other Wood Products",
+      description: "We offer different product made from pine-tree, spruce, cedar and larch as per your request.",
+      image: other
    },
 ]
 
@@ -75,7 +74,7 @@ export const BlockProducts: React.FC = (): JSX.Element => {
          </div>
 
          <div className={s.button} data-aos="fade-up">
-            <form action="tel:+37122012202">
+            <form action="tel:+37126622113">
                <Button ariaLabel="contact-us" variant="primary">
                   Get Price Now
                </Button>
