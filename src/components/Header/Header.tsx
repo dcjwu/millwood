@@ -21,13 +21,13 @@ export const Header: React.FC = (): JSX.Element => {
                <Heading color="white" component="h1" data-aos="fade-down"
                         style={{ textAlign: "center" }}
                         variant="display">
-                  MILLWOOD
+                  Quality in Wood
                </Heading>
                <Text color="white" component="p" data-aos="fade-down"
                      style={{ textAlign: "center" }} variant="paragraph-lg">
                   Millwood is the company specialising in eco-friendly fuel production. We are Latvia-based company with
-                  branches in Poland and Ukraine, producing top quality wood pellet and firework. Millwood is your
-                  reliable partner during cold European winters.
+                  representatives in Belgium and Ukraine, producing top quality wood pellet and firework. Millwood is
+                  your reliable partner during cold European winters.
                </Text>
                <a data-aos="fade-up" href="#contact">
                   <Button ariaLabel="contact-us" style={{ display: "block", margin: "0 auto" }} variant="primary">
