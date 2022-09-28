@@ -32,6 +32,7 @@
 }
 
 .inner {
+  width: calc(100% - 6.4rem);
   background-color: $color-background-grey;
   display: flex;
   flex-direction: column;
@@ -39,6 +40,20 @@
   justify-content: center;
   opacity: .75;
   padding: 6.4rem 3.2rem;
+
+  @include breakpoint-max($bp-screen-smd) {
+    width: calc(100% - 3.2rem);
+    padding: 3.2rem 1.6rem;
+  }
+
+  h1 {
+    @include breakpoint-max($bp-screen-md) {
+      font-size: 5.2rem;
+    }
+    @include breakpoint-max($bp-screen-smd) {
+      font-size: 4.2rem;
+    }
+  }
 
   button {
     background-color: $color-brand;

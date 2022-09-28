@@ -18,7 +18,7 @@ export const Header: React.FC = (): JSX.Element => {
          <header ref={ref} className={s.wrapper}
                  id="home">
             <div className={s.inner}>
-               <Heading color="white" component="p" data-aos="fade-down"
+               <Heading color="white" component="h1" data-aos="fade-down"
                         style={{ textAlign: "center" }}
                         variant="display">
                   MILLWOOD
