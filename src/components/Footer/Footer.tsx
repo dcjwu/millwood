@@ -23,8 +23,8 @@ export const Footer: React.FC = (): JSX.Element => {
                </a>
             </Text>
             <Text color="white" component="p" variant="paragraph">
-               <a href="mailto:info@millhouse.lv">
-                  info@millhouse.lv
+               <a href="mailto:info@millwood.lv">
+                  info@millwood.lv
                </a>
             </Text>
          </div>
