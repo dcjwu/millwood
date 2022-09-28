@@ -36,9 +36,9 @@ const Home: NextPage = () => {
             <Text color="white" component="p" data-aos="fade-up"
                   style={{ textAlign: "center" }}
                   variant="paragraph-lg">
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed arcu pulvinar felis suscipit lobortis
-               commodo sit amet leo. Morbi hendrerit a purus sed rhoncus. Phasellus enim ante, pulvinar quis magna non,
-               maximus ultrices ante. Donec rutrum id dolor id convallis.
+               Our field of activity is eco-friendly and clean fuel production and distribution. SIA Millhouse Trade is
+               the company incorporated in Latvia, having its representatives in Belgium and Ukraine, with partners
+               across the Europe.
             </Text>
          </Section>
 

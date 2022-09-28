@@ -69,7 +69,7 @@ export const Navigation: React.FC = (): JSX.Element => {
                               strokeLinejoin="round" strokeWidth="1.5"/>
                      </svg>
                      <Text color="brand" component="span" variant="paragraph">
-                        +37126622113
+                        +371 26622113
                      </Text>
                   </a>
                   <a href="mailto:info@millwood.lv">

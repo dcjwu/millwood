@@ -15,29 +15,42 @@ export const Footer: React.FC = (): JSX.Element => {
                Reg Nr: 440203387800
             </Text>
             <Text color="white" component="p" variant="paragraph">
-               Riga, Latvia
+               Pils Laukums 4-1, Riga, LV-1050, Latvia
+            </Text>
+            <Text color="white" component="p" variant="paragraph">
+               <a href="tel:+37126622113">
+                  +371 26622113
+               </a>
+            </Text>
+            <Text color="white" component="p" variant="paragraph">
+               <a href="mailto:info@millhouse.lv">
+                  info@millhouse.lv
+               </a>
             </Text>
          </div>
          <div>
             <Text color="white" component="p" variant="paragraph">
-               XXXXXXXXXXXXXXXXXXX
+               Representative in Belgium:
             </Text>
             <Text color="white" component="p" variant="paragraph">
-               XXXXXXXXXXXXXXXXXXX
+               Rue Sneessens 1, 1040 Etterbeek, 1040 Belgium
             </Text>
             <Text color="white" component="p" variant="paragraph">
-               XXXXXXXXXXXXXXXXXXX
+               <a href="tel:+32477974797">+324 77974797</a>
+            </Text>
+            <Text color="white" component="p" variant="paragraph">
+               <a href="mailto:benelux@millwood.lv">benelux@millwood.lv</a>
             </Text>
          </div>
          <div>
             <Text color="white" component="p" variant="paragraph">
-               XXXXXXXXXXXXXXXXXXX
+               Representative in Ukraine:
             </Text>
             <Text color="white" component="p" variant="paragraph">
-               XXXXXXXXXXXXXXXXXXX
+               Yevhena Konovaltsia St, 36, Kyiv, Ukraine, 02000
             </Text>
             <Text color="white" component="p" variant="paragraph">
-               XXXXXXXXXXXXXXXXXXX
+               <a href="tel:+380672453950">+380 672453950</a>
             </Text>
          </div>
       </div>
