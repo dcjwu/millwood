@@ -32,7 +32,6 @@
 }
 
 .inner {
-  width: calc(100% - 6.4rem);
   background-color: $color-background-grey;
   display: flex;
   flex-direction: column;
@@ -40,10 +39,11 @@
   justify-content: center;
   opacity: .75;
   padding: 6.4rem 3.2rem;
+  width: calc(100% - 6.4rem);
 
   @include breakpoint-max($bp-screen-smd) {
-    width: calc(100% - 3.2rem);
     padding: 3.2rem 1.6rem;
+    width: calc(100% - 3.2rem);
   }
 
   h1 {
