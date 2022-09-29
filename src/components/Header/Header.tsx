@@ -26,7 +26,7 @@ export const Header: React.FC = (): JSX.Element => {
                <Text color="white" component="p" data-aos="fade-down"
                      style={{ textAlign: "center" }} variant="paragraph-lg">
                   Millwood is the company specialising in eco-friendly fuel production. We are Latvia-based company with
-                  representatives in Belgium and Ukraine, producing top quality wood pellet and firework. Millwood is
+                  representatives in Belgium and Ukraine, producing top quality wood pellet and firewood. Millwood is
                   your reliable partner during cold European winters.
                </Text>
                <a data-aos="fade-up" href="#contact">

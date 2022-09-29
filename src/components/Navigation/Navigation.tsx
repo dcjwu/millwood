@@ -88,7 +88,7 @@ export const Navigation: React.FC = (): JSX.Element => {
                         info@millwood.lv
                      </Text>
                   </a>
-                  <Text color="brand" component="p" style={{ textAlign: "center" }}
+                  <Text color="brand" component="p"
                         variant="paragraph">
                      Pils laukums 4-1 <br/>
                      Riga, LV-1050, Latvia
