@@ -9,13 +9,13 @@ export const Footer: React.FC = (): JSX.Element => {
       <div className={s.footer}>
          <div>
             <Text color="white" component="p" variant="paragraph">
-               SIA &quot;Millhouse Trade&quot;
+               SIA Millhouse Trade
             </Text>
             <Text color="white" component="p" variant="paragraph">
                Reg Nr: 440203387800
             </Text>
             <Text color="white" component="p" variant="paragraph">
-               Pils Laukums 4-1, Riga, LV-1050, Latvia
+               Pils laukums 4-1, Riga, LV-1050, Latvia
             </Text>
             <Text color="white" component="p" variant="paragraph">
                <a href="tel:+37126622113">
