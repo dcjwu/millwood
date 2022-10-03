@@ -1,58 +1,40 @@
-@import "src/assets/styles/constants";
 @import "src/assets/styles/mixins";
 
 .form {
+  margin: 0 auto 8.6rem;
+  max-width: 546px;
+}
+
+.wrapper {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
-  margin: 0 auto;
-  width: 70%;
+  margin-bottom: 2.4rem;
 
-  @include breakpoint-max($bp-screen-md) {
-    width: 100%;
-  }
-
-  > input, textarea {
-    background-color: $color-grey-300;
-    border: 1px solid $color-grey-300;
-    border-radius: 2.4rem;
+  input, textarea {
+    background-color: transparent;
+    border: 1px solid $color-grey;
+    color: $color-white;
     font-family: inherit;
-    padding: 1.6rem 2.4rem;
-    transition: border .2s ease-in-out;
+    line-height: inherit;
+    padding: 1.6rem;
+    transition: border $transition-seconds ease-in-out;
+    width: calc(100% - 3.2rem);
 
     &::placeholder {
-      @include text-label();
-      color: $color-grey-600;
-      transition: color .2s ease-in-out;
+      color: $color-white;
     }
 
-    &:focus,
-    &:hover {
-      border: 1px solid $color-grey-1000;
-      &::placeholder {
-        color: $color-grey-1000;
-      }
+    &:focus {
+      border: 1px solid $color-white;
     }
   }
 
-  > textarea {
+  textarea {
     resize: none;
   }
 
-  > button {
-    align-self: center;
-    background-color: $color-brand;
-    transition: color .2s ease-in-out;
+  button {
     width: fit-content;
-
-    &:hover,
-    &:focus {
-      color: $color-background-grey;
-    }
-
-    &:disabled {
-      background-color: $color-brand;
-      color: $color-white;
-    }
   }
 }

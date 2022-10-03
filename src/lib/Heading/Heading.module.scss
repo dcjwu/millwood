@@ -1,46 +1,40 @@
-@import "src/assets/styles/constants";
 @import "src/assets/styles/mixins";
 
 .display {
   @include heading-display();
+  transition: color $transition-seconds ease-in-out;
 }
 
 .h1 {
   @include heading-h1();
+  transition: color $transition-seconds ease-in-out;
 }
 
 .h2 {
   @include heading-h2();
+  transition: color $transition-seconds ease-in-out;
 }
 
-.h3 {
-  @include heading-h3();
+.c_brand-v1 {
+  color: $color-brand-v1;
 }
 
-.c_brand {
-  color: $color-brand;
+.c_brand-v2 {
+  color: $color-brand-v2;
+}
+
+.c_brand-v3 {
+  color: $color-brand-v3;
 }
 
 .c_white {
   color: $color-white;
 }
 
-.c_300 {
-  color: $color-grey-300;
+.c_grey {
+  color: $color-grey;
 }
 
-.c_400 {
-  color: $color-grey-400;
-}
-
-.c_600 {
-  color: $color-grey-600;
-}
-
-.c_1000 {
-  color: $color-grey-1000;
-}
-
-.c_bg {
-  color: $color-background-grey;
+.c_black {
+  color: $color-black;
 }

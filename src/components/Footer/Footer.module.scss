@@ -1,19 +1,35 @@
-@import "src/assets/styles/constants";
 @import "src/assets/styles/mixins";
 
 .footer {
-  background-color: $color-brand;
   display: grid;
   gap: 2.4rem;
-  grid-template-columns: repeat(auto-fit, minmax(212px, 1fr));
-  padding: 3.2rem 3.2rem 3.2rem calc($nav-real-width + 3.2rem);
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 3.2rem 6.4rem calc($nav-width + 3.2rem);
 
   @include breakpoint-max($bp-screen-xl) {
-    padding-left: calc($nav-real-width-xl + 3.2rem);
+    padding: 0 6.4rem 3.2rem calc($nav-width-xl + 3.2rem);
   }
 
   @include breakpoint-max($bp-screen-lg) {
-    padding-left: 3.2rem;
-    width: calc(100vw - 6.4rem);
+    padding: 0 3.2rem 3.2rem;
+  }
+
+  @include breakpoint-max($bp-screen-md) {
+    grid-template-columns: initial;
+  }
+}
+
+.item {
+
+  > p {
+    margin-bottom: .8rem;
+
+    &:first-child {
+      margin-bottom: 1.2rem;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }

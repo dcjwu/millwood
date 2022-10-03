@@ -1,0 +1,1 @@
+export const dbAbout = "Millwood.lv (a trading name of SIA Millhouse Trade) is a domestic biomass supplier. With offices in Riga, Latvia, and distribution representatives in Ukraine and Belgium, Millwood.lv supplies wood pellets, charcoal, firewood, and wood briquettes, with blisteringly quick delivery times and a commitment to exemplifying all that customer service should be."

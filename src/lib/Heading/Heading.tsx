@@ -5,9 +5,9 @@ import classNames from "classnames/bind"
 import s from "./Heading.module.scss"
 
 type HeadingType = {
-   component: "h1" | "h2" | "h3" | "h4" | "p"
-   variant: "display" | "h1" | "h2" | "h3"
-   color: "brand" | "white" | "300" | "400" | "600" | "1000" | "bg"
+   component: "h1" | "h2" | "h3" | "p"
+   variant: "display" | "h1" | "h2"
+   color: "brand-v1" | "brand-v2" | "brand-v3" | "white" | "grey" | "black"
    children: React.ReactNode
    [k: string]: unknown
 }

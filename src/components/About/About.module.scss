@@ -1,0 +1,16 @@
+@import "src/assets/styles/mixins";
+
+.about {
+  align-items: center;
+  display: grid;
+  gap: 3.2rem;
+  grid-template-columns: 1fr .7fr;
+
+  @include breakpoint-max($bp-screen-md) {
+    grid-template-columns: initial;
+
+    > span {
+      grid-row-start: 1;
+    }
+  }
+}

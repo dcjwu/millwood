@@ -8,8 +8,8 @@ const cx = classNames.bind(s)
 
 type TextType = {
    component: "p" | "span" | "li" | "h3"
-   variant: "paragraph" | "paragraph-lg" | "label"
-   color: "brand" | "white" | "300" | "400" | "600" | "1000"
+   variant: "paragraph" | "paragraph-lg"
+   color: "brand-v1" | "brand-v2" | "brand-v3" | "white" | "grey" | "black"
    isBold?: boolean
    children: React.ReactNode
    [k: string]: unknown

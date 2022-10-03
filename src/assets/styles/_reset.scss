@@ -221,7 +221,7 @@ html {
 }
 
 body {
-  background-color: $color-brand;
+  background-color: rgba($color-black, .98);
   color: $color-white;
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
