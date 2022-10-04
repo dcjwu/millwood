@@ -5,12 +5,29 @@
   display: grid;
   gap: 3.2rem;
   grid-template-columns: 1fr .7fr;
+  margin-bottom: 6.4rem;
 
   @include breakpoint-max($bp-screen-md) {
     grid-template-columns: initial;
 
     > span {
       grid-row-start: 1;
+    }
+  }
+}
+
+.partner {
+  > p:first-child {
+    margin-bottom: 2.4rem;
+  }
+  > p:nth-child(2) {
+    max-width: 52ch;
+  }
+  button {
+    margin-top: 2.4rem;
+    &:hover,
+    &:focus {
+      border: 1px solid $color-brand-v1;
     }
   }
 }

@@ -18,13 +18,13 @@ export const dbAddresses: DbAddressesType[] = [
    },
    {
       title: "Representative in Ukraine:",
-      address: "Pils Laukums 4-1, Riga, LV-1050, Latvia",
-      phone: "+371 26622113",
+      address: "Yevhena Konovaltsia St, 36, Kyiv, Ukraine, 02000",
+      phone: "+380 672453950",
    },
    {
       title: "Representative in Belgium",
-      address: "Pils Laukums 4-1, Riga, LV-1050, Latvia",
-      phone: "+371 26622113",
-      email: "info@millwood.lv"
+      address: "Rue Sneessens 1, 1040 Etterbeek, 1040 Belgium",
+      phone: "+324 77974797",
+      email: "benelux@millwood.lv"
    },
 ]

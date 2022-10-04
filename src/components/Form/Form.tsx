@@ -8,12 +8,14 @@ import s from "./Form.module.scss"
 
 type FormType = {
    name: string
+   company: string
    email: string
    message: string
 }
 
 const initialState: FormType = {
    name: "",
+   company: "",
    email: "",
    message: ""
 }
@@ -78,9 +80,15 @@ export const Form: React.FC = (): JSX.Element => {
             <input required name="name" placeholder="Name"
                    type="text"
                    value={form.name} onChange={handleInputChange}/>
+
+            <input name="company" placeholder="Company"
+                   type="text"
+                   value={form.company} onChange={handleInputChange}/>
+
             <input required name="email" placeholder="Email"
                    type="email"
                    value={form.email} onChange={handleInputChange}/>
+
             <textarea required name="message" placeholder="Your message"
                       rows={4}
                       value={form.message} onChange={handleInputChange}/>

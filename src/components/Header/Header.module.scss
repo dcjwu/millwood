@@ -1,7 +1,7 @@
 @import "src/assets/styles/mixins";
 
 .header {
-  background: linear-gradient(to right, rgba($color-black, .85) 65%, rgba($color-grey, .2)) 65% 100%, url('../../assets/images/header.jpeg') left center repeat;
+  background: linear-gradient(to right, rgba($color-black, .85) 65%, rgba($color-grey, .2)) 65% 100%, url('../../assets/images/header.jpg') left center repeat;
   display: flex;
   flex-direction: column;
   height: calc(100vh - 19.2rem);
@@ -25,7 +25,7 @@
     width: calc(100vw - 6.4rem);
   }
 
-  @include breakpoint-max-vertical($bp-vertical-md) {
+  @media (max-width: 420px) and (max-height: 700px) {
     height: initial;
   }
 

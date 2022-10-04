@@ -12,6 +12,20 @@ export default class Document extends NextDocument {
                <meta content="Millwood is the company specialising in eco-friendly fuel production. We are Latvia-based company with
                   branches in Poland and Ukraine, producing top quality wood pellets and firewood. Millwood is your
                   reliable partner during cold European winters." name="description"/>
+
+               <meta content="Millwood | Quality in Wood" property="og:title"/>
+               <meta content="Millwood is the company specialising in eco-friendly fuel production. We are Latvia-based company with
+                  branches in Poland and Ukraine, producing top quality wood pellets and firewood. Millwood is your
+                  reliable partner during cold European winters." property="og:description"/>
+               <meta content="https://millwood.lv/logo.png" property="og:image"/>
+               <meta content="https://millwood.lv" property="og:url"/>
+
+
+               <meta content="Millwood | Quality in Wood" name="twitter:title"/>
+               <meta content="Millwood is the company specialising in eco-friendly fuel production. We are Latvia-based company with
+                  branches in Poland and Ukraine, producing top quality wood pellets and firewood. Millwood is your
+                  reliable partner during cold European winters." name="twitter:description"/>
+               <meta content="https://millwood.lv/logo.png" name="twitter:url"/>
             </Head>
             <body>
                <Main/>

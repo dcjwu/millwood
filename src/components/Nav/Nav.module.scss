@@ -45,23 +45,22 @@
 }
 
 .links {
-  margin: 6rem 0 16.8rem;
+  margin: 6rem 0 10vh;
 
   @include breakpoint-max($bp-screen-lg) {
-    margin: 3.2rem 0 4.8rem;
+    margin: 3.2rem 0 10vh;
   }
 
   > a {
 
-    .notHover {
+    &.notHover {
       p {
-        border-bottom-color: $color-brand-v3;
         color: $color-brand-v3;
       }
     }
 
     p {
-      border-bottom: 1px solid $color-brand-v1;
+      border-bottom: 1px solid $color-brand-v3;
       padding: 1.6rem 0;
       text-transform: uppercase;
       transition: color $transition-seconds ease-in-out, border-bottom-color $transition-seconds ease-in-out;
