@@ -1,38 +1,78 @@
-@import "src/assets/styles/constants";
 @import "src/assets/styles/mixins";
 
-.wrapper {
-  display: none;
-}
+.topbar {
+  backdrop-filter: blur(10px);
+  background-color: rgba($color-white, .05);
+  height: calc(1.6rem + 4.8rem); //buttonHeight + paddings*2
+  left: 0;
+  position: fixed;
+  top: 0;
+  transform: translateY(-100%);
+  transition: transform $transition-seconds ease-in-out, background-color $transition-seconds ease-in-out, backdrop-filter .4s ease-in-out;
+  width: 100vw;
+  z-index: 9;
 
-@include breakpoint-max($bp-screen-lg) {
-  .wrapper {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    left: 50%;
-    margin-top: 4.6rem;
-    max-width: $screen-max-width;
-    padding: 0 3.2rem;
-    position: fixed;
-    top: 0;
-    transform: translateX(-50%);
-    width: calc(100vw - 6.4rem);
-    z-index: 99;
+  &.show {
+    backdrop-filter: blur(0);
+    background-color: $color-black;
+
   }
 
-  .call {
-    background-color: $color-brand;
-    border-radius: 100%;
-    height: 2.4rem;
-    left: 3.2rem;
-    padding: 1.2rem;
-    position: absolute;
-    transition: background-color .2s ease-in-out;
-    width: 2.4rem;
+  @include breakpoint-max($bp-screen-lg) {
+    transform: translateY(0);
+  }
+}
 
-    svg path {
-      stroke: $color-white;
+.buttonWrapper {
+  height: 100%;
+  position: relative;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: 1.6rem;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  transition: transform $transition-seconds ease-in-out;
+  width: 4rem;
+
+  > span {
+    background-color: $color-white;
+    border-radius: 1.2rem;
+    cursor: pointer;
+    display: block;
+    height: .2rem;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    transform: rotate(0deg);
+    transition: transform $transition-seconds ease-in-out, background-color $transition-seconds ease-in-out;
+    width: 100%;
+
+    &:nth-child(1) {
+      top: 0;
+    }
+
+    &:nth-child(2) {
+      top: 1.2rem;
+    }
+  }
+
+  &.show span {
+    &:nth-child(1) {
+      background-color: $color-brand-v1;
+      top: .6rem;
+      transform: rotate(-135deg);
+    }
+
+    &:nth-child(2) {
+      background-color: $color-brand-v1;
+      top: .6rem;
+      transform: rotate(135deg);
     }
   }
 }

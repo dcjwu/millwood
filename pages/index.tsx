@@ -1,15 +1,20 @@
 import React from "react"
 
 import Aos from "aos"
+import dynamic from "next/dynamic"
 
-import { BlockProducts } from "@components/BlockProducts/BlockProducts"
 import { Footer } from "@components/Footer/Footer"
-import { Form } from "@components/Form/Form"
 import { Header } from "@components/Header/Header"
+import { Nav } from "@components/Nav/Nav"
+import { Products } from "@components/Products/Products"
 import { Section } from "@lib/Section/Section"
-import { Text } from "@lib/Text/Text"
+import { colorBrandV3 } from "@utils/styles"
 
 import type { NextPage } from "next"
+
+const Topbar = dynamic(() => import("@components/Topbar/Topbar").then(module => module.Topbar))
+const About = dynamic(() => import("@components/About/About").then(module => module.About))
+const Form = dynamic(() => import("@components/Form/Form").then(module => module.Form))
 
 const Home: NextPage = () => {
 
@@ -25,27 +30,25 @@ const Home: NextPage = () => {
 
    return (
       <>
+         <Topbar/>
+
+         <Nav/>
+
          <Header/>
 
-         <Section id="products" subtitle="What we offer" title="Products">
-            <BlockProducts/>
+         <Section component="section" header="Products" id="Products">
+            <Products/>
          </Section>
 
-         <Section isBrandBackGround id="about" subtitle="Who we are"
-                  title="About">
-            <Text color="white" component="p" data-aos="fade-up"
-                  style={{ textAlign: "center" }}
-                  variant="paragraph-lg">
-               Our field of activity is eco-friendly and clean fuel production and distribution. SIA Millhouse Trade is
-               the company incorporated in Latvia, having its representatives in Belgium and Ukraine, with partners
-               across the Europe.
-            </Text>
+         <Section component="section" header="About Us" id="About"
+                  style={{ background: colorBrandV3 }}>
+            <About/>
          </Section>
 
-         <Section id="contact" subtitle="Contact us" title="Get in Touch">
+         <Section component="section" header="Contact Us" id="ContactUs">
             <Form/>
          </Section>
-
+         
          <Footer/>
       </>
    )

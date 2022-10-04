@@ -12,6 +12,7 @@ sgMail.setApiKey(process.env.SENDGRID ?? "")
 
 const PostEmailDto = Joi.object({
    name: Joi.string().required(),
+   company: Joi.string(),
    email: Joi.string().required().email(),
    message: Joi.string().required()
 })
@@ -22,6 +23,7 @@ router
    .post(validationMiddleware({ body: PostEmailDto }), async (request: NextApiRequest, response: NextApiResponse): Promise<void> => {
       const {
          name,
+         company,
          email,
          message
       } = request.body
@@ -45,6 +47,7 @@ router
                    <p>Hey,</p>
                    <p>You have received new email from <b>${email}</b>.</p>
                    <p>Name: <b>${name}</b></p>
+                   <p>Company: <b>${company}</b></p>
                    <p>Message: <b>${message}</b></p>
                </div>`
       }

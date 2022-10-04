@@ -1,0 +1,115 @@
+@import "src/assets/styles/mixins";
+
+.nav {
+  background-color: $color-black;
+  height: calc(100vh - 6.4rem);
+  left: 0;
+  overflow-y: scroll;
+  padding: 3.2rem;
+  position: fixed;
+  top: 0;
+  transition: transform $transition-seconds ease-in-out;
+  width: calc($nav-width - 6.4rem);
+  z-index: 99;
+
+  @include breakpoint-max($bp-screen-xl) {
+    width: calc($nav-width-xl - 6.4rem);
+  }
+
+  @include breakpoint-max($bp-screen-lg) {
+    height: calc(100vh - 6.4rem - (1.6rem + 4.8rem)); //buttonHeight + paddings*2);
+    top: calc(1.6rem + 4.8rem); //buttonHeight + paddings*2
+    transform: translateX(-100%);
+    width: calc(100vw - 6.4rem);
+  }
+
+  > span:first-child {
+    display: block !important;
+    margin: 0 auto !important;
+  }
+
+  &.show {
+    transform: translateX(0);
+  }
+}
+
+.wrapper {
+  @include breakpoint-max($bp-screen-lg) {
+    margin: 0 auto;
+    width: 65%;
+  }
+
+  @include breakpoint-max($bp-screen-smd) {
+    width: 100%;
+  }
+}
+
+.links {
+  margin: 6rem 0 10vh;
+
+  @include breakpoint-max($bp-screen-lg) {
+    margin: 3.2rem 0 10vh;
+  }
+
+  > a {
+
+    &.notHover {
+      p {
+        color: $color-brand-v3;
+      }
+    }
+
+    p {
+      border-bottom: 1px solid $color-brand-v3;
+      padding: 1.6rem 0;
+      text-transform: uppercase;
+      transition: color $transition-seconds ease-in-out, border-bottom-color $transition-seconds ease-in-out;
+    }
+  }
+}
+
+.item {
+  align-items: center;
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: 0fr 1fr;
+  margin-bottom: 1.6rem;
+
+  svg {
+    path {
+      transition: stroke $transition-seconds ease-in-out, fill $transition-seconds ease-in-out;
+    }
+  }
+
+  &.notHover {
+    p, span {
+      color: $color-brand-v3;
+    }
+
+    svg {
+      path {
+        stroke: $color-brand-v3;
+      }
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+
+    &.notHover {
+      svg {
+        path {
+          fill: $color-brand-v3;
+          stroke: none;
+        }
+      }
+    }
+  }
+}
+
+.notHover {
+  p {
+    border-bottom-color: $color-brand-v3;
+    color: $color-brand-v3;
+  }
+}

@@ -1,12 +1,10 @@
 $color-white: #FFFFFF;
-$color-grey-300: #D4D4D4;
-$color-grey-400: #9E9E9E;
-$color-grey-600: #7A7A7A;
-$color-grey-1000: #1A1A1A;
+$color-grey: #525252;
+$color-black: #212121;
 
-$color-background-grey: #272727;
-
-$color-brand: #C5A47E;
+$color-brand-v1: #C5A47E;
+$color-brand-v2: #8B683F;
+$color-brand-v3: #5E554A;
 
 $bp-screen-xl: 1099px;
 $bp-screen-lg: 991px;
@@ -15,15 +13,14 @@ $bp-screen-smd: 565px;
 $bp-screen-sm: 375px;
 $bp-screen-xs: 320px;
 
-$nav-width: 16vw;
-$nav-width-xl: 22vw;
+$bp-vertical-md: 700px;
 
-$nav-padding-x: 3.2rem;
+$content-max-width: 1200px;
 
-$nav-real-width: calc($nav-width + $nav-padding-x * 2);
-$nav-real-width-xl: calc($nav-width-xl + $nav-padding-x * 2);
+$nav-width: 22vw;
+$nav-width-xl: 26vw;
 
-$screen-max-width: 1200px;
+$transition-seconds: .35s
 
 
 

@@ -9,20 +9,20 @@ const cx = classNames.bind(s)
 type ButtonType = {
    variant: "primary" | "secondary"
    ariaLabel: string
-   children: React.ReactNode
    loading?: boolean
    success?: string
    error?: string
+   children: React.ReactNode
    [k: string]: unknown
 }
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonType>(({
    variant,
-   children,
    ariaLabel,
    loading,
    success,
    error,
+   children,
    ...props
 }, ref): JSX.Element => {
 
@@ -34,9 +34,10 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonType>(({
    })
 
    return (
-      <button ref={ref} aria-label={ariaLabel} {...props}
-              className={classNamesButton}
-              disabled={loading || !!success || !!error}>
+      <button ref={ref} aria-label={ariaLabel} className={classNamesButton}
+              disabled={loading || !!success || !!error}
+              {...props}>
+
          <span>
 
             {loading && "Processing"}

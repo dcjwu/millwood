@@ -1,70 +1,58 @@
-@import "src/assets/styles/constants";
 @import "src/assets/styles/mixins";
 
-.wrapper {
-  align-items: center;
-  //background: linear-gradient(to bottom, rgba($color-grey-600, 0.75), rgba($color-brand, 0.75)), url('../../assets/images/header.jpeg') left center no-repeat;
-  background: linear-gradient(to bottom, rgba($color-grey-600, 0.8), rgba($color-background-grey, 0.8)), url('../../assets/images/header.jpeg') left center no-repeat;
+.header {
+  background: linear-gradient(to right, rgba($color-black, .85) 65%, rgba($color-grey, .2)) 65% 100%, url('../../assets/images/header.jpg') left center repeat;
   display: flex;
   flex-direction: column;
-  gap: 3.2rem;
-  height: 100vh;
+  height: calc(100vh - 19.2rem);
   justify-content: center;
-  padding-left: $nav-real-width;
-  width: calc(100vw - $nav-real-width);
+  padding: 12.8rem 6.4rem 6.4rem calc($nav-width + 6.4rem);
+  width: calc(100vw - ($nav-width + 6.4rem) - 6.4rem);
 
   @include breakpoint-max($bp-screen-xl) {
-    padding-left: $nav-real-width-xl;
-    width: calc(100vw - $nav-real-width-xl);
+    padding-left: calc($nav-width-xl + 6.4rem);
+    width: calc(100vw - ($nav-width-xl + 6.4rem) - 6.4rem);
   }
 
   @include breakpoint-max($bp-screen-lg) {
-    padding-left: 0;
-    width: 100vw;
+    padding-left: 6.4rem;
+    width: calc(100vw - 12.8rem);
   }
 
-  > p {
-    max-width: 75%;
+  @include breakpoint-max($bp-screen-md) {
+    height: calc(100vh - 16.2rem);
+    padding: 9.8rem 3.2rem 6.4rem 3.2rem;
+    width: calc(100vw - 6.4rem);
+  }
 
-    @include breakpoint-max($bp-screen-sm) {
-      margin-top: 8rem;
+  @media (max-width: 420px) and (max-height: 700px) {
+    height: initial;
+  }
+
+  > h1 + p {
+    margin: 2.4rem 0 4.8rem 0;
+    max-width: 65ch;
+
+    @include breakpoint-max($bp-screen-smd) {
+      margin: 1.2rem 0 2.4rem 0;
     }
   }
 }
 
-.inner {
+.buttonWrapper {
+  align-items: center;
   display: flex;
-  flex-direction: column;
-  gap: 3.2rem;
-  justify-content: center;
-  padding: 6.4rem 3.2rem;
-  width: calc(100% - 6.4rem);
-
   @include breakpoint-max($bp-screen-smd) {
-    padding: 3.2rem 1.6rem;
-    width: calc(100% - 3.2rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
   }
 
-  h1 {
-    @include breakpoint-max($bp-screen-md) {
-      font-size: 5.2rem;
-    }
-    @include breakpoint-max($bp-screen-smd) {
-      font-size: 4.2rem;
-    }
-  }
-
-  > p {
-    font-size: 1.8rem;
-    line-height: 140%;
-  }
-
-  button {
-    background-color: $color-brand;
-
-    &:hover,
-    &:focus {
-      color: $color-background-grey;
+  button:first-child {
+    > span {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 0fr 1fr;
     }
   }
 }

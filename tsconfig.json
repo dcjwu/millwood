@@ -19,12 +19,14 @@
     "baseUrl": ".",
     "useUnknownInCatchVariables": false,
     "paths": {
+      "@db/*": ["db/*"],
       "@assets/*": ["src/assets/*"],
       "@atoms/*": ["src/atoms/*"],
       "@components/*": ["src/components/*"],
       "@hooks/*": ["src/hooks/*"],
       "@lib/*": ["src/lib/*"],
       "@service/*": ["src/service/*"],
+      "@utils/*": ["src/utils/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

@@ -21,7 +21,7 @@
     "lint:styles": "npm run lint:common-styles && npm run lint:component-styles",
     "lint:common-styles": "stylelint --fix src/assets/styles/* --custom-syntax postcss-scss",
     "lint:component-styles": "stylelint --fix src/components/**/*.scss --custom-syntax postcss-scss",
-    "prepare": "husky install"
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",
@@ -47,6 +47,7 @@
     "eslint-config-next": "12.3.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "husky": "^8.0.0",
+    "next-sitemap": "^3.1.23",
     "postcss-scss": "^4.0.4",
     "sass": "^1.54.9",
     "stylelint": "^14.11.0",
