@@ -20,7 +20,6 @@ export default class Document extends NextDocument {
                <meta content="https://millwood.lv/logo.png" property="og:image"/>
                <meta content="https://millwood.lv" property="og:url"/>
 
-
                <meta content="Millwood | Quality in Wood" name="twitter:title"/>
                <meta content="Millwood is the company specialising in eco-friendly fuel production. We are Latvia-based company with
                   branches in Poland and Ukraine, producing top quality wood pellets and firewood. Millwood is your
