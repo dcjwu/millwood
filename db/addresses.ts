@@ -12,7 +12,7 @@ export const dbAddresses: DbAddressesType[] = [
       title: "Head Office",
       company: "SIA Millhouse Trade",
       regNr: "440203387800",
-      address: "Pils Laukums 4-1, Riga, LV-1050, Latvia",
+      address: "Pils laukums 4-1, Riga, LV-1050, Latvia",
       phone: "+371 26622113",
       email: "info@millwood.lv"
    },

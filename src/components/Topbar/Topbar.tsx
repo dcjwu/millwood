@@ -19,15 +19,6 @@ export const Topbar: React.FC = (): JSX.Element => {
    const handleToggleBurgerMenu = (): void => {
       setIsNavVisible(prevState => !prevState)
    }
-
-   React.useEffect(() => {
-      if (isNavVisible) {
-         document.body.style.overflow = "hidden"
-
-      } else {
-         document.body.style.overflow = ""
-      }
-   }, [isNavVisible])
    
    return (
       <div className={classNamesTopbar}>

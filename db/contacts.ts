@@ -7,5 +7,5 @@ export type DbContactsType = {
 export const dbContactsMillwood: DbContactsType = {
    phone: "+371 26622113",
    email: "info@millwood.lv",
-   address: "Pils Laukums 4-1\nRiga, LV-1050, Latvia"
+   address: "Pils laukums 4-1\nRiga, LV-1050, Latvia"
 }
