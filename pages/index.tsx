@@ -2,6 +2,7 @@ import React from "react"
 
 import Aos from "aos"
 import dynamic from "next/dynamic"
+import Script from "next/script"
 
 import { Footer } from "@components/Footer/Footer"
 import { Header } from "@components/Header/Header"
@@ -30,6 +31,20 @@ const Home: NextPage = () => {
 
    return (
       <>
+
+         <Script src="https://www.googletagmanager.com/gtag/js?id=G-3051E82C5W"
+                 strategy="lazyOnload"/>
+
+         <Script id="script" strategy="lazyOnload">
+            {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                     gtag('config', 'G-3051E82C5W');
+                `}
+         </Script>
+
          <Topbar/>
 
          <Nav/>
