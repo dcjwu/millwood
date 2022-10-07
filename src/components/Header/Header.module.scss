@@ -16,6 +16,7 @@
 
   @include breakpoint-max($bp-screen-lg) {
     padding-left: 6.4rem;
+    background: linear-gradient(to right, rgba($color-black, .85) 65%, rgba($color-grey, .2)) 65% 100%, url('../../assets/images/header.jpg') right center repeat;
     width: calc(100vw - 12.8rem);
   }
 
