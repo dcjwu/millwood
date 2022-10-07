@@ -22,7 +22,7 @@ export const dbAddresses: DbAddressesType[] = [
       phone: "+380 672453950",
    },
    {
-      title: "Representative in Estonia",
+      title: "Representative in Estonia:",
       address: "Maakri 30, Tallinn, 10145, Estonia",
       phone: "+372 5158250",
       email: "erko@millwood.lv"
