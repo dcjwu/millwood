@@ -10,7 +10,7 @@ export type DbAddressesType = {
 export const dbAddresses: DbAddressesType[] = [
    {
       title: "Head Office",
-      company: "SIA Millhouse Trade",
+      company: "SIA MILLHOUSE TRADE",
       regNr: "440203387800",
       address: "Pils laukums 4-1, Riga, LV-1050, Latvia",
       phone: "+371 26622113",
