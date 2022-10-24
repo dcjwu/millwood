@@ -1,6 +1,7 @@
 import React from "react"
 
 import Aos from "aos"
+import axios from "axios"
 import dynamic from "next/dynamic"
 import Script from "next/script"
 
@@ -17,7 +18,11 @@ const Topbar = dynamic(() => import("@components/Topbar/Topbar").then(module => 
 const About = dynamic(() => import("@components/About/About").then(module => module.About))
 const Form = dynamic(() => import("@components/Form/Form").then(module => module.Form))
 
-const Home: NextPage = () => {
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+const Home: NextPage = ({ data }) => {
+
+   console.table(data)
 
    React.useEffect(() => {
       Aos.init({
@@ -70,3 +75,11 @@ const Home: NextPage = () => {
 }
 
 export default Home
+
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+export const getServerSideProps = async () => {
+   const res = await axios.get("https://pdf-generator-indol.vercel.app/api/users")
+   // const res = await axios.get("http://localhost:3000/api/users")
+   const { data } = res
+   return { props: { data } }
+}
